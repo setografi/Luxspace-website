@@ -1,11 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Logo from "../assets/images/content/logo.png";
 
 function SiteMap() {
   return (
     <>
-      <section className="">
-        <div className="border-t border-b border-gray-200 py-12 mt-16 px-4">
+      <section className="sitemap">
+        <div className="border-b border-gray-200 py-12 mt-16 px-4">
           <div className="flex justify-center mb-8">
             <img
               src={Logo}
@@ -20,19 +22,22 @@ function SiteMap() {
                 </h5>
                 <ul className="h-0 invisible md:h-auto md:visible overflow-hidden">
                   <li>
-                    <a href="#" className="hover:underline py-1 block">
+                    <Link to="/shipping" className="hover:underline py-1 block">
                       Shipping
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:underline py-1 block">
+                    <Link to="/refund" className="hover:underline py-1 block">
                       Refund
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:underline py-1 block">
+                    <Link
+                      to="/promotion"
+                      className="hover:underline py-1 block"
+                    >
                       Promotion
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -40,19 +45,22 @@ function SiteMap() {
                 <h5 className="text-lg font-semibold mb-2 relative">Company</h5>
                 <ul className="h-0 invisible md:h-auto md:visible overflow-hidden">
                   <li>
-                    <a href="#" className="hover:underline py-1 block">
+                    <Link to="/about" className="hover:underline py-1 block">
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:underline py-1 block">
+                    <Link to="/career" className="hover:underline py-1 block">
                       Career
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:underline py-1 block">
+                    <Link
+                      to="/contact-us"
+                      className="hover:underline py-1 block"
+                    >
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -60,19 +68,28 @@ function SiteMap() {
                 <h5 className="text-lg font-semibold mb-2 relative">Explore</h5>
                 <ul className="h-0 invisible md:h-auto md:visible overflow-hidden">
                   <li>
-                    <a href="#" className="hover:underline py-1 block">
+                    <Link
+                      to="/terms-conds"
+                      className="hover:underline py-1 block"
+                    >
                       Terms & Conds
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:underline py-1 block">
+                    <Link
+                      to="/privacy-policy"
+                      className="hover:underline py-1 block"
+                    >
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:underline py-1 block">
+                    <Link
+                      to="/for-developer"
+                      className="hover:underline py-1 block"
+                    >
                       For Developer
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
