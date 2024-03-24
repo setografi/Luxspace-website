@@ -90,7 +90,7 @@ export default function ProductDetails() {
 
             <a
               href="cart.html"
-              className="transition-all duration-200 bg-pink-400 text-black focus:bg-black focus:text-pink-400 rounded-full px-8 py-3 mt-4 inline-flex"
+              className="transition-all duration-200 bg-pink-300 text-black focus:bg-black focus:text-pink-400 rounded-full px-8 py-3 mt-4 inline-flex"
             >
               <svg
                 className="fill-current mr-3"

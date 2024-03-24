@@ -3,11 +3,10 @@ import Header from "../parts/Header";
 import Breadcrumb from "../components/Breadcrumb/index";
 import ProductDetails from "../parts/Details/ProductDetails";
 import Suggestion from "../parts/Details/Suggestion";
-import Clients from "../parts/Clients";
 import SiteMap from "../parts/SiteMap";
 import Footer from "../parts/Footer";
 
-export default function Details() {
+function Details() {
   return (
     <>
       <Header theme="black" />
@@ -20,9 +19,11 @@ export default function Details() {
       />
       <ProductDetails />
       <Suggestion />
-      <Clients />
+
       <SiteMap />
       <Footer />
     </>
   );
 }
+
+export default Details;
